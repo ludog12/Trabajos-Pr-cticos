@@ -147,16 +147,17 @@ console.log("-----------------------EJERCICIO SEIS--------------------")
 
 function filtrar(nombre, nombres){
 
-    let indice=nombres.indexOf(nombre)
-    let resultado=nombres[indice]
-
-    return console.log(resultado)
+    for (i=0;i < nombres.length;i++) {
+        if (nombres[i] === b){
+                nombres.splice(i,1)
+            }
+        } return nombres
 
 }
 
 const nombres=["Susana", "Lautaro","Ruth", "Lautaro"]
 let nombre="Lautaro"
-filtrar(nombre,nombres)
+console.log(filtrar(nombre,nombres))
 
 /*
 
@@ -170,6 +171,8 @@ function ________([]){
 	return
 }
 */
+
+
 
 /*8)---------
 IMPLEMENTAR UNA FUNCIÓN QUE TOME: OBJETO CON 2 O 3 PROPIEDADES Y UN STRING
